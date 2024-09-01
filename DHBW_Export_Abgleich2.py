@@ -49,8 +49,8 @@ def run(playwright: Playwright) -> None:
     page.goto("https://dualis.dhbw.de/")
     page.goto("https://dualis.dhbw.de/scripts/mgrqispi.dll?APPNAME=CampusNet&PRGNAME=STARTPAGE_DISPATCH&ARGUMENTS=-N000000000000001")
     page.goto("https://dualis.dhbw.de/scripts/mgrqispi.dll?APPNAME=CampusNet&PRGNAME=EXTERNALPAGES&ARGUMENTS=-N000000000000001,-N000324,-Awelcome")
-    page.get_by_label("Benutzername:").fill("s******@student.dhbw-mannheim.de")
-    page.get_by_label("Passwort:").fill("*********")
+    page.get_by_label("Benutzername:").fill("s******@student.dhbw-mannheim.de") #Benutzername nicht im Code inkludiert da dieser hier öffentlich ist
+    page.get_by_label("Passwort:").fill("*********") #Passwort nicht im Code inkludiert da dieser hier öffentlich ist
     page.get_by_role("button", name="Anmelden").click()
     print("Erfolgreich eingeloggt.")  # Debugging-Ausgabe
 
